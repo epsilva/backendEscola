@@ -102,8 +102,6 @@ class UserController {
             ]
         });
 
-
-
         return res.json({
             id,
             name,

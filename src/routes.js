@@ -31,8 +31,11 @@ routes.get('/students', StudentController.index);
 routes.get('/subjects', SubjectController.index);
 routes.post('/subjects', SubjectController.store);
 routes.put('/subjects', SubjectController.update);
+routes.delete('/subjects/:id', SubjectController.delete);
 
 routes.post('/userSubjects',  UserSubjectController.store);
+routes.get('/userSubjects/:id',  UserSubjectController.indexSubjectByProvider);
+
 
 routes.get('/notifications', NotificationController.index);
 routes.put('/notifications/:id', NotificationController.update);
